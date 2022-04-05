@@ -5,7 +5,7 @@ Kirby CMS files for a library digital signage system
 
 If you are familiar with Git, you can clone this repository from Github.
 
-    git clone https://github.com/catsoup11789/LibraryDigitalSignage.git
+    git clone https://github.com/salinapl/LibraryDigitalSignage.git
     
 Kirby does not require a database, which makes it very easy to
 install. Just copy Kirby's files to your server and visit the
@@ -16,9 +16,9 @@ copied to your server correctly**
     
 ## Issues
 
-If you have a Github account, please report issues directly on Github: <https://github.com/catsoup11789/LibraryDigitalSignage/issues>
+If you have a Github account, please report issues directly on Github: <https://github.com/salinapl/LibraryDigitalSignage/issues>
 
-Or you can email me at tech.kirstien@salpublib.org
+Or you can email us at tech.lib@salinapublic.org
 
 # Kirby
 
