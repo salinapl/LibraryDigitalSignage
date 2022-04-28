@@ -24,7 +24,9 @@ columns:
         type: files
         layout: cards
         template: image
-        info: "---</br>Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Category: {{ file.category }}"
+        info: "Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Category: {{ file.category }}"
+        sortBy: expire desc
+        expire: "{{ file.expire.toDate('Y-m-d') }}"
         image:
           ratio: 1/1
           cover: false
