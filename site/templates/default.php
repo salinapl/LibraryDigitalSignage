@@ -11,8 +11,8 @@
     </div>
 </div>
 
-<!-- If OPAC, load up OPAC buttons -->
-<?php if(strpos($url, 'opac')): ?>
+<!-- If overlay, load up OPAC buttons -->
+<?php if(strpos($url, 'overlay')): ?>
 <div class="right">
     <?php snippet('menu') ?>
 </div>

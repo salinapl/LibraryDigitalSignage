@@ -27,21 +27,21 @@ if(strpos($url, 'portrait')) {
     $orientation = 'landscape';
 } ?>
 
-<?php foreach ($gallery->sortBy('sort','asc') as $ad): ?>
+<?php foreach ($gallery->sortBy('sort','asc') as $image): ?>
     <!-- filter for only images that are supposed to be visible -->
-    <?php if (($ad->expire()->toDate('Y-m-d') > date('Y-m-d')) && ($ad->start()->toDate('Y-m-d') <= date('Y-m-d'))): ?>
+    <?php if (($image->expire()->toDate('Y-m-d') > date('Y-m-d')) && ($image->start()->toDate('Y-m-d') <= date('Y-m-d'))): ?>
         <!-- match orientation to image -->
-        <?php if($ad->orientation() == $orientation): ?>
-            <?php if($ad->orientation() == 'portrait'): ?>
-                <div class="carousel-cell" style="background-image:url(<?= $ad->resize(null, 1080)->url() ?>)">
+        <?php if($image->orientation() == $orientation): ?>
+            <?php if($image->orientation() == 'portrait'): ?>
+                <div class="carousel-cell" style="background-image:url(<?= $image->resize(null, 1080)->url() ?>)">
             <?php else: ?>
-                <div class="carousel-cell" style="background-image:url(<?= $ad->resize(1080, null)->url() ?>)">
+                <div class="carousel-cell" style="background-image:url(<?= $image->resize(1080, null)->url() ?>)">
             <?php endif ?>
             <!-- if OPAC, show register button, but only if URL AND button text is provided -->
-            <?php if((strpos($url, 'opac')) && ($ad->link()->isNotEmpty()) && ($ad->text()->isNotEmpty())): ?>
-                <a href="<?php $site->url(); ?>/frame?shortcut=<?= $ad->link() ?>" class="btn-register"><?= $ad->text() ?></a>
+            <?php if((strpos($url, 'opac')) && ($image->link()->isNotEmpty()) && ($image->text()->isNotEmpty())): ?>
+                <a href="<?php $site->url(); ?>/frame?shortcut=<?= $image->link() ?>" class="btn-register"><?= $image->text() ?></a>
             <?php endif ?>
-        </div>
+                </div>
         <?php endif ?>
     <?php endif ?>
 <?php endforeach ?>
