@@ -4,124 +4,54 @@
     <style>
         /*CSS Reboot*/
         dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}address,dl,ol,p,pre,ul{margin-bottom:1rem}body,caption{text-align:left}button,hr,input{overflow:visible}pre,textarea{overflow:auto}article,aside,dialog,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}dd,h1,h2,h3,h4,h5,h6,label,legend{margin-bottom:.5rem}address,legend{line-height:inherit}progress,sub,sup{vertical-align:baseline}label,output{display:inline-block}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}@-ms-viewport{width:device-width}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff}[tabindex="-1"]:focus{outline:0!important}hr{box-sizing:content-box;height:0}abbr[data-original-title],abbr[title]{text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;cursor:help;border-bottom:0}address{font-style:normal}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}dt{font-weight:700}dd{margin-left:0}blockquote,figure{margin:0 0 1rem}dfn{font-style:italic}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0}sub{bottom:-.25em}sup{top:-.5em}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}a:hover{color:#0056b3;text-decoration:underline}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}a:not([href]):not([tabindex]):focus{outline:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}pre{-ms-overflow-style:scrollbar}img{vertical-align:middle;border-style:none}svg:not(:root){overflow:hidden}[role=button],a,area,button,input:not([type=range]),label,select,summary,textarea{-ms-touch-action:manipulation;touch-action:manipulation}table{border-collapse:collapse}caption{padding-top:.75rem;padding-bottom:.75rem;color:#868e96;caption-side:bottom}th{text-align:inherit}button{border-radius:0}button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=date],input[type=datetime-local],input[type=month],input[type=time]{-webkit-appearance:listbox}textarea{resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{width:100%;max-width:100%;padding:0;font-size:1.5rem;color:inherit;white-space:normal}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{outline-offset:-2px;-webkit-appearance:none}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}summary{display:list-item}template{display:none}[hidden]{display:none!important}
+        body{background-color: #2e2926;}
+        h1{padding:1em 0 0 1.5em;color:#fafafa}
+        h2{font-size:2.3rem}
         ul {list-style:none;padding:0;width:auto;margin:2em}
-        li {border:1px solid #000;margin:1em 0 1em 0;padding:1em}
+        li {border:1px solid #000;margin:1em 0 1em 0;padding:1em;background-color:#00bef2;color:#2e2926;}
+        li:nth-child(even) {background-color:#004d71;color:#fafafa}
+        li span{font-weight:bold;font-size:1.8rem}
+        .time{text-decoration: underline;padding-right:.5em;font-size:2.3rem}
     </style>
 </head>
 <body>
-    <h1>Upcoming Events</h1>
-
-    <ul id="ev-list"></ul>
+    <h1>Upcoming Events at the Salina Public Library</h1>
+    <ul id="evlist"></ul>
 </body>
 <script>
-    const ul = document.getElementById('ev-list');
+    const ul = document.getElementById('evlist');
     const list = document.createDocumentFragment();
-    const url = 'https://calendar.salinapubliclibrary.org/events/feed/json?start=now&rooms=90,91,147,150,151,152,155,156,157,158,159,173,193,194,201,204&quantity=4';
-
-    //https://stackoverflow.com/questions/14638018/current-time-formatting-with-javascript
-    function formatDate(date, format, utc) {
-        var MMMM = ["\x00", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        var MMM = ["\x01", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        var dddd = ["\x02", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var ddd = ["\x03", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-        function ii(i, len) {
-            var s = i + "";
-            len = len || 2;
-            while (s.length < len) s = "0" + s;
-            return s;
-        }
-
-        var y = utc ? date.getUTCFullYear() : date.getFullYear();
-        format = format.replace(/(^|[^\\])yyyy+/g, "$1" + y);
-        format = format.replace(/(^|[^\\])yy/g, "$1" + y.toString().substr(2, 2));
-        format = format.replace(/(^|[^\\])y/g, "$1" + y);
-
-        var M = (utc ? date.getUTCMonth() : date.getMonth()) + 1;
-        format = format.replace(/(^|[^\\])MMMM+/g, "$1" + MMMM[0]);
-        format = format.replace(/(^|[^\\])MMM/g, "$1" + MMM[0]);
-        format = format.replace(/(^|[^\\])MM/g, "$1" + ii(M));
-        format = format.replace(/(^|[^\\])M/g, "$1" + M);
-
-        var d = utc ? date.getUTCDate() : date.getDate();
-        format = format.replace(/(^|[^\\])dddd+/g, "$1" + dddd[0]);
-        format = format.replace(/(^|[^\\])ddd/g, "$1" + ddd[0]);
-        format = format.replace(/(^|[^\\])dd/g, "$1" + ii(d));
-        format = format.replace(/(^|[^\\])d/g, "$1" + d);
-
-        var H = utc ? date.getUTCHours() : date.getHours();
-        format = format.replace(/(^|[^\\])HH+/g, "$1" + ii(H));
-        format = format.replace(/(^|[^\\])H/g, "$1" + H);
-
-        var h = H > 12 ? H - 12 : H == 0 ? 12 : H;
-        format = format.replace(/(^|[^\\])hh+/g, "$1" + ii(h));
-        format = format.replace(/(^|[^\\])h/g, "$1" + h);
-
-        var m = utc ? date.getUTCMinutes() : date.getMinutes();
-        format = format.replace(/(^|[^\\])mm+/g, "$1" + ii(m));
-        format = format.replace(/(^|[^\\])m/g, "$1" + m);
-
-        var s = utc ? date.getUTCSeconds() : date.getSeconds();
-        format = format.replace(/(^|[^\\])ss+/g, "$1" + ii(s));
-        format = format.replace(/(^|[^\\])s/g, "$1" + s);
-
-        var f = utc ? date.getUTCMilliseconds() : date.getMilliseconds();
-        format = format.replace(/(^|[^\\])fff+/g, "$1" + ii(f, 3));
-        f = Math.round(f / 10);
-        format = format.replace(/(^|[^\\])ff/g, "$1" + ii(f));
-        f = Math.round(f / 10);
-        format = format.replace(/(^|[^\\])f/g, "$1" + f);
-
-        var T = H < 12 ? "AM" : "PM";
-        format = format.replace(/(^|[^\\])TT+/g, "$1" + T);
-        format = format.replace(/(^|[^\\])T/g, "$1" + T.charAt(0));
-
-        var t = T.toLowerCase();
-        format = format.replace(/(^|[^\\])tt+/g, "$1" + t);
-        format = format.replace(/(^|[^\\])t/g, "$1" + t.charAt(0));
-
-        var tz = -date.getTimezoneOffset();
-        var K = utc || !tz ? "Z" : tz > 0 ? "+" : "-";
-        if (!utc) {
-            tz = Math.abs(tz);
-            var tzHrs = Math.floor(tz / 60);
-            var tzMin = tz % 60;
-            K += ii(tzHrs) + ":" + ii(tzMin);
-        }
-        format = format.replace(/(^|[^\\])K/g, "$1" + K);
-
-        var day = (utc ? date.getUTCDay() : date.getDay()) + 1;
-        format = format.replace(new RegExp(dddd[0], "g"), dddd[day]);
-        format = format.replace(new RegExp(ddd[0], "g"), ddd[day]);
-
-        format = format.replace(new RegExp(MMMM[0], "g"), MMMM[M]);
-        format = format.replace(new RegExp(MMM[0], "g"), MMM[M]);
-
-        format = format.replace(/\\(.)/g, "$1");
-
-        return format;
-    };
-    //end formatDate
+    const url = 'https://calendar.salinapubliclibrary.org/events/feed/json?start=now&end=1week&branches=85,146,149&rooms=90,91,147,150,151,152,155,156,157,158,159,173,193,194,201,204&quantity=10';
 
     fetch(url) 
         .then((response) => { 
             return response.json(); 
         }) 
         .then((json) => { 
-            json.map(function(author) { 
+            json.map(function(evnt) { 
+                let branchName = Object.values(evnt.branch)?.[0];
+                let roomName = Object.values(evnt.room)?.[0];
                 let li = document.createElement('li'); 
-                let title = document.createElement('h2'); 
+                let title = document.createElement('h2');
+                let start_time = document.createElement('span');
                 let start_date = document.createElement('span');
+                let raw_date = `${evnt.start_date}`;
+                let date = new Date(raw_date);
+                let options_date = {  
+                    weekday: "long", month: "long",  
+                    day: "numeric"
+                };
+                let options_time = {  
+                    hour: "numeric", minute: "2-digit"
+                };
 
-                //let description = document.createElement('span');
+    title.innerHTML = `${evnt.title}` + " | " + `${branchName}` + " - " + `${roomName}`;
 
-    title.innerHTML = `${author.title}`;
-    //description.innerHTML = `${author.description}`;
-    //start_date.innerHTML = formatDate(`${author.start_date}`, "dddd h:mmtt d MMM yyyy");
-    start_date.innerHTML = `${author.start_date}`;
+    start_date.innerHTML = date.toLocaleDateString("en-us", options_date);
+    start_time.innerHTML = date.toLocaleTimeString("en-us", options_time);
 
     li.appendChild(title);
-    //li.appendChild(description);
+    li.appendChild(start_time).classList.add("time");;
     li.appendChild(start_date);
     list.appendChild(li);
     ul.appendChild(list);
