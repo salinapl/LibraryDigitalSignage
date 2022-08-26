@@ -1,8 +1,0 @@
-type: pages
-headline: Campaign Gallery
-parent: kirby.page("slideshow")
-info: "{{ page.images.count }} image(s)"
-layout: cardlets
-template: album
-empty: No albums yet
-image: false

@@ -1,20 +1,42 @@
 title: Site
 columns:
   # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
-  - width: 1/2
+  - width: 1/3
     sections:
-      albums: sections/albums
-
-      pages:
+      albums:
+        type: pages
+        headline: Campaign Gallery
+        parent: kirby.page("slideshow")
+        info: "{{ page.images.count }} image(s)"
         layout: cardlets
-        
-        
+        template: album
+        empty: No albums yet
+        image: false
 
-  # The second column has two sections, `notes` and `pages`
-  - width: 1/2
+      dynamic:
+        layout: list
+        type: pages
+        headline: Dynamic Campaign Pages
+        parent: kirby.page("dynamic")
+
+      opac:
+        layout: list
+        type: pages
+        headline: OPAC Pages
+        parent: kirby.page("opac")
+
+  # The second column
+  - width: 2/3
     label: Links
     type: structure
     fields:
-      entries:
-        extends: fields/dslinks
+      dslinks:
+        extends: fields/links
         label: Digital Signage Links
+      opaclinks:
+        extends: fields/links
+        label: OPAC Links
+      otherlinks:
+        extends: fields/links
+        label: Other/Misc Links
+

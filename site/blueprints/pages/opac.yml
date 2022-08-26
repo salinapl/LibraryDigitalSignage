@@ -1,0 +1,12 @@
+title: OPAC Page
+icon: 📚
+sections:
+  drafts:
+    extends: sections/opac
+    headline: Drafts
+    status: draft
+
+  listed:
+    extends: sections/opac
+    headline: Live OPAC Page
+    status: listed

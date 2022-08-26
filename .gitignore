@@ -12,6 +12,7 @@ composer.json
 # Temporary files
 # ---------------
 
+
 /media/*
 !/media/index.html
 
@@ -46,7 +47,7 @@ composer.json
 
 # Sessions
 # ---------------
-
+/site/sessions
 /site/sessions/*
 !/site/sessions/index.html
 

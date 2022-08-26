@@ -1,27 +1,37 @@
-Title: Salina Public Library Digital Signage
+Title: Public Library Digital Signage
 
 ----
 
-Entries:
+Dslinks:
 
 - 
-  link: http://ds.salinalibrary.info/opac/
-  description: OPAC (ALL)
+  link: http://ds.salinalibrary.info/selfcheck/
+  description: Digital Signage (Autodetect)
+- 
+  link: http://ds.salinalibrary.info/all/
+  description: 'Digital Signage (all - Landscape)'
+- 
+  link: http://ds.salinalibrary.info/adult
+  description: 'Digital Signage (Only Adult - Landscape)'
+- 
+  link: http://ds.salinalibrary.info/youth
+  description: 'Digital Signage (Only Youth - Landscape)'
+
+----
+
+Opaclinks:
+
 - 
   link: http://ds.salinalibrary.info/opac/adult
   description: OPAC (Adult)
 - 
   link: http://ds.salinalibrary.info/opac/youth
   description: OPAC (Youth)
+
+----
+
+Otherlinks:
+
 - 
-  link: http://ds.salinalibrary.info/selfcheck/
-  description: Digital Signage (Autodetect)
-- 
-  link: http://ds.salinalibrary.info/all/
-  description: Digital Signage (all)
-- 
-  link: http://ds.salinalibrary.info/adult
-  description: Digital Signage (Only Adult)
-- 
-  link: http://ds.salinalibrary.info/youth
-  description: Digital Signage (Only Youth)
+  link: 'https://docs.google.com/document/d/11JA1ImsvIz1rJELRA33sRAHGArRCgJRI1gD8c71r_h4/edit#'
+  description: Digital Signage Documentation
