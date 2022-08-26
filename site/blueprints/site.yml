@@ -5,20 +5,20 @@ columns:
     sections:
       albums:
         type: pages
-        headline: Campaign Gallery
+        headline: Campaign Image Galleries
         parent: kirby.page("slideshow")
         info: "{{ page.images.count }} image(s)"
         layout: cardlets
         template: album
         empty: No albums yet
-        image: false
-
+        image:
+          cover: true
+          query: page.previewImage
       dynamic:
         layout: list
         type: pages
-        headline: Dynamic Campaign Pages
+        headline: Campaign Dynamic Blocks
         parent: kirby.page("dynamic")
-
       opac:
         layout: list
         type: pages

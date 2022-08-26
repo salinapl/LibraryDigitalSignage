@@ -1,0 +1,44 @@
+Title: Public Library OPAC - Youth
+
+----
+
+Headline: I want to...
+
+----
+
+Links:
+
+- 
+  icon: fas fa-search
+  link: >
+    https://discover.salinapubliclibrary.org/
+  description: ' Search the Catalog & View My Account'
+- 
+  icon: fas fa-globe
+  link: 'https://www.salinapubliclibrary.org?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Explore the Website'
+- 
+  icon: fas fa-calendar-alt
+  link: 'https://www.salinapubliclibrary.org/events?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Discover Events'
+- 
+  icon: fas fa-graduation-cap
+  link: 'https://salinapubliclibrary.org/research/databases-a-z?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Search the Databases'
+- 
+  icon: fas fa-gamepad
+  link: 'https://salinapubliclibrary.org/programs-services/youth/learning-games?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Play Learning Games'
+- 
+  icon: fas fa-tablet-alt
+  link: >
+    https://salinapubliclibrary.org/books-media/emedia/
+  description: ' Explore eMaterials'
+
+----
+
+Intro: The page could not be found.
+
+----
+
+Text: Well, stuff can go wrong sometimes and maybe you mistyped a URL, tapped/clicked on a broken link or your computer just wants to drive you nuts. Anyway … keep calm and take a look at our beautiful (link: / text: homepage) instead.

@@ -1,12 +1,10 @@
 title: OPAC Page
+preset: page
 icon: 📚
-sections:
-  drafts:
-    extends: sections/opac
-    headline: Drafts
-    status: draft
-
-  listed:
-    extends: sections/opac
-    headline: Live OPAC Page
-    status: listed
+fields:
+  headline:
+    label: Headline
+    type: text
+  links:
+    extends: fields/opaclinks
+    label: OPAC Links
