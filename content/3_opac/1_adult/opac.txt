@@ -2,10 +2,6 @@ Title: Library OPAC - Adult
 
 ----
 
-Htmltitle: Welcome to Salina Public Library
-
-----
-
 Headline: I want to...
 
 ----
@@ -13,28 +9,60 @@ Headline: I want to...
 Links:
 
 - 
-  icon: fas fa-search
-  link: >
-    https://discover.salinapubliclibrary.org/
-  description: ' Search the Catalog & View My Account'
-- 
-  icon: fas fa-globe
+  icon: bx bx-globe
   link: 'https://www.salinapubliclibrary.org?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Explore the Website'
 - 
-  icon: fas fa-calendar-alt
+  icon: bx bx-calendar
   link: 'https://www.salinapubliclibrary.org/events?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Discover Events'
 - 
-  icon: fas fa-graduation-cap
+  icon: bx bx-book-reader
   link: 'https://salinapubliclibrary.org/research/databases-a-z?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Search the Databases'
 - 
-  icon: fas fa-gamepad
+  icon: bx bx-game
   link: 'https://salinapubliclibrary.org/programs-services/youth/learning-games?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Play Learning Games'
 - 
-  icon: fas fa-tablet-alt
+  icon: bx bx-devices
   link: >
     https://salinapubliclibrary.org/books-media/emedia/
   description: ' Explore eMaterials'
+- 
+  icon: bx bx-search
+  link: >
+    https://discover.salinapubliclibrary.org/
+  description: ' Search the Catalog'
+- 
+  icon: bx bx-user
+  link: >
+    https://discover.salinapubliclibrary.org/MyAccount/Home
+  description: View My Account
+
+----
+
+Ref:
+
+- 
+  link: https://boxicons.com/
+  description: boxicons cheatsheet
+
+----
+
+Header-image: - logo.png
+
+----
+
+Sidebar: true
+
+----
+
+Files:
+
+- logo.png
+- placeholder.png
+
+----
+
+Htmltitle: Welcome to Salina Public Library

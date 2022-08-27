@@ -1,59 +1,88 @@
+:root {
+    --spl-cyan:#00bef2;
+    --spl-dark-blue:#004d71;
+    --spl-tan:#ffc46c;
+    --spl-black:#2e2926;
+    --spl-gray:#65666a;
+    --spl-light-gray:#fafafa;
+}
+
 body {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     align-items: center;
-    background: #f5f5f5;
+    background: var(--spl-black);
     font-family: 'Open Sans', 'Helvetica','Arial', sans-serif;
 }
 
 html,body {
     height: 100%;
 }
-ul {list-style: none;}
-.flex-box {
+i{
+    position:relative;
+    top:3px;
+    padding-right:3px;
+}
+.flex-box{
+    height: calc(100%-5rem);
+}
+.flex-box, nav {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
-    padding: 30px;
-    width: 710px;
+
+}
+nav {
+    gap: 1rem;
+    padding: 0;
+    padding-right: 1rem;
+}
+.flex-box {
+    flex-wrap: nowrap;
+    background: var(--spl-light-gray);
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    min-width:30%;
+    max-width: 70%;
 }
 
 .flex-full-width {
     display: block;
     width: 100%;
 }
-
 .flex-item {
-    flex: 1 1 calc(50% - 2rem);
-    margin: 1rem;
+    flex: 2 1 calc(50% - 2rem);
+}
+.flex-button {
+    flex: 2 0 fit-content;
+    min-width: 100px
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 2.2em;
+    margin-bottom: 2rem;
     font-weight: 600;
+    color: var(--spl-black)
 }
 
 .logo img {
-    width: 320px;
     padding-bottom:1em;
     text-align: center;
     margin: 0 auto;
     display: block;
 }
 
-.flex-box a li {
+.flex-box nav a {
     display: block;
-    color: #fff;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    background: #00bef2;
-    padding: 20px;
-    font-size: 22px;
+    width:100%;
+    color: var(--spl-light-gray);
+    border-radius: .5rem;
+    background: var(--spl-cyan);
+    padding: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
 }
 .flex-box a {
@@ -63,6 +92,15 @@ h1 {
     text-decoration: none;
 }
 
-.flex-box a div:hover {
-    background: #47a3d1;
+.flex-box nav a:hover {
+    background: var(--spl-dark-blue);
+    /*background: #47a3d1;*/
+}
+.ad{
+   width: 425px; 
+}
+@media screen and (max-width: 1500px) {
+    .flex-aside{
+        display:none
+    }
 }

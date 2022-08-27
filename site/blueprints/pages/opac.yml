@@ -1,10 +1,30 @@
 title: OPAC Page
-preset: page
+#preset: page
 icon: 📚
-fields:
-  headline:
-    label: Headline
-    type: text
-  links:
-    extends: fields/opaclinks
-    label: OPAC Links
+columns:
+  left:
+    width: 2/3
+    fields:
+      headline:
+        label: Headline
+        type: text
+      links:
+        extends: fields/opaclinks
+        label: OPAC Links
+  right:
+    width: 1/3
+    fields:
+      ref:
+        extends: fields/links
+        label: Refrence Links
+      header_image:
+        type: files
+        query: page.images
+        multiple: false
+        label: Header Image
+      sidebar:
+        type: toggle
+        text:
+          - "Disabled"
+          - "Enabled"
+        label: Show Sidebar
