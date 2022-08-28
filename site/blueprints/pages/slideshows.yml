@@ -1,0 +1,10 @@
+title: slideshows
+icon: 🎞️
+
+fields:
+  tags:
+    label: Set Campaign Categories
+    type: tags
+    # options: query
+    # query: page.parent.pluck('tags', ';', true)
+    # query: page.links.toStructure

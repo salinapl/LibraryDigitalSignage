@@ -6,7 +6,6 @@
     --spl-gray:#65666a;
     --spl-light-gray:#fafafa;
 }
-
 body {
     display: flex;
     padding-top: 1rem;
@@ -15,7 +14,6 @@ body {
     background: var(--spl-black);
     font-family: 'Open Sans', 'Helvetica','Arial', sans-serif;
 }
-
 html,body {
     height: 100%;
 }
@@ -67,14 +65,12 @@ h1 {
     font-weight: 600;
     color: var(--spl-black)
 }
-
 .logo img {
     padding-bottom:1em;
     text-align: center;
     margin: 0 auto;
     display: block;
 }
-
 .flex-box nav a {
     display: block;
     width:100%;
@@ -91,10 +87,8 @@ h1 {
 .flex-box a:hover {
     text-decoration: none;
 }
-
 .flex-box nav a:hover {
     background: var(--spl-dark-blue);
-    /*background: #47a3d1;*/
 }
 .ad{
    width: 425px; 

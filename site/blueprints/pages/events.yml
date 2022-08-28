@@ -1,0 +1,6 @@
+title: Event Test
+icon: 🎉
+fields:
+  calendar:
+    extends: fields/links
+    label: Calendar URL

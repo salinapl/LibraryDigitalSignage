@@ -14,11 +14,16 @@ columns:
         image:
           cover: true
           query: page.previewImage
-      dynamic:
+      slideshows:
         layout: list
         type: pages
-        headline: Campaign Dynamic Blocks
-        parent: kirby.page("dynamic")
+        headline: Campaign Slideshows
+        parent: kirby.page("slideshows")
+      slides:
+        layout: list
+        type: pages
+        headline: Campaign Web Slides
+        parent: kirby.page("slides")
       opac:
         layout: list
         type: pages
