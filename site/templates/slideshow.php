@@ -1,6 +1,6 @@
 <?php 
 // create variables
-$gallery = page('/slideshow/gallery')->images();
+$gallery = page($page->gallery())->images();
 // filter by tag passed by slideshow
 $tags = $page->tags();
 // orientation variable (passed to snippet)

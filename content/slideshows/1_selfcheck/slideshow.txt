@@ -6,4 +6,8 @@ Delay: 15
 
 ----
 
+Gallery: galleries/primary-image-gallery
+
+----
+
 Tags: adult, youth
