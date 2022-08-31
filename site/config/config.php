@@ -8,8 +8,8 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 return [
-    'debug' => true,
-    /* turn to FALSE when going live to hide debugging errors */
+  'debug' => true,
+  /* turn to FALSE when going live to hide debugging errors */
 
   'panel' =>[
     'install' => true

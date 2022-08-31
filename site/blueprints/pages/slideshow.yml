@@ -5,6 +5,11 @@ fields:
     label: Delay Between Slides (Seconds)
     type: number
     min: 10
+  gallery:
+    label: Image Gallery
+    type: select
+    options: query
+    query: site.find('galleries').children
   tags:
     label: Campaign Categories
     type: tags

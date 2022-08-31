@@ -14,6 +14,16 @@ columns:
         image:
           cover: true
           query: page.previewImage
+      galleries:
+        type: pages
+        headline: Campaign Image Galleries
+        parent: kirby.page("galleries")
+        info: "{{ page.images.count }} image(s)"
+        layout: cardlets
+        empty: No galleries yet
+        image:
+          cover: true
+          query: page.previewImage
       slideshows:
         layout: list
         type: pages
@@ -44,4 +54,5 @@ columns:
       otherlinks:
         extends: fields/links
         label: Other/Misc Links
+
 

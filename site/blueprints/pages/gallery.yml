@@ -1,0 +1,19 @@
+title: Gallery
+icon: 🖼️
+status:
+  draft: true
+  listed: true
+fields:
+  images:
+    type: files
+    layout: cards
+    template: image
+    info: "Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Category: {{ file.category }}"
+    sortBy: expire desc
+    expire: "{{ file.expire.toDate('Y-m-d') }}"
+    image:
+      ratio: 1/1
+      cover: false
+      back: pattern
+    min: 1
+    size: small
