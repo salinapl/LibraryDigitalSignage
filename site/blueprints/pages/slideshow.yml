@@ -2,9 +2,9 @@ title: slideshow
 icon: 🎞️
 fields:
   delay:
-    label: Delay Between Slides (Seconds)
+    label: Delay Between Slides (Milliseconds)
     type: number
-    min: 10
+    min: 1000
   gallery:
     label: Image Gallery
     type: select

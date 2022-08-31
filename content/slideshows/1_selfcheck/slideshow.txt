@@ -2,7 +2,7 @@ Title: selfcheck
 
 ----
 
-Delay: 15
+Delay: 9000
 
 ----
 
