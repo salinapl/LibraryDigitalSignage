@@ -27,3 +27,8 @@ columns:
           - "Disabled"
           - "Enabled"
         label: Show Sidebar
+      slides:
+        label: Slideshow
+        type: select
+        options: query
+        query: site.find('slideshows').children

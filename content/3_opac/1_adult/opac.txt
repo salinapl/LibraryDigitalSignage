@@ -58,6 +58,18 @@ Sidebar: true
 
 ----
 
+Gallery: slideshows/selfcheck
+
+----
+
+Delay: 9000
+
+----
+
+Tags: adult, youth
+
+----
+
 Files:
 
 - logo.png

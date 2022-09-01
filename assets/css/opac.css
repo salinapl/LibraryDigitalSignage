@@ -90,11 +90,39 @@ h1 {
 .flex-box nav a:hover {
     background: var(--spl-dark-blue);
 }
-.ad{
-   width: 425px; 
+.main-carousel{
+   width: 425px;
+   height: 746px;
+   z-index: 1000;
+   overflow: hidden;
+}
+.carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 @media screen and (max-width: 1500px) {
-    .flex-aside{
-        display:none
+    .flex-box {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 850px) {
+    body{
+        background: var(--spl-light-gray);
+    }
+    .flex-box {
+        flex-wrap: wrap;
+        min-width:500px;
+        justify-content: center;
+        max-width: 100%;
+        height:100%;
+        box-shadow: none;
+    }
+    .main-carousel {
+        margin-top: 1rem;
+
+    }
+    nav {
+        padding-right: 0;
     }
 }

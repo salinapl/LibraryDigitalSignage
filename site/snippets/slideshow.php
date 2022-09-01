@@ -1,8 +1,16 @@
 <?php 
-// create variables
-$gallery = page($page->gallery())->images();
-// filter by tag passed by slideshow
-$tags = $page->tags();
+    $gallery = page(page($page->slides())->gallery())->images();
+    $tags = page(page($page->slides())->tags());
+
+
+// <?php if ($page->parent()->title() = "OPAC Pages") {
+//     $gallery = page($slides->gallery())->images();
+//     $tags = page($slides->tags());
+// } else {
+//     $gallery = page($page->gallery())->images();
+//     $tags = page($page->tags());
+// }
+
 // orientation variable (passed to snippet)
 $orientation = 'landscape';
  ?>
@@ -13,9 +21,9 @@ $orientation = 'landscape';
         <!-- match orientation to image -->
         <?php if($image->orientation() == $orientation): ?>
             <?php if($image->orientation() == 'portrait'): ?>
-                <div class="carousel-cell" style="background-image:url(<?= $image->resize(null, 1080)->url() ?>)">
+                <div class="carousel-cell ad" style="background-image:url(<?= $image->resize(null, 1080)->url() ?>)">
             <?php else: ?>
-                <div class="carousel-cell" style="background-image:url(<?= $image->resize(1080, null)->url() ?>)">
+                <div class="carousel-cell ad" style="background-image:url(<?= $image->resize(1080, null)->url() ?>)">
             <?php endif ?>
                 </div>
         <?php endif ?>

@@ -1,5 +1,8 @@
 <!doctype html>
-<?php $url = $_SERVER['REQUEST_URI']; ?>
+<?php 
+    $slides = page($page->slides());
+    $opac = TRUE;
+?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -9,6 +12,7 @@
         <?= css('assets/css/bootstrap-reboot.min.css') ?>
         <link rel="stylesheet" id="ebor-google-font-css" href="fonts.googleapis.com/css?family=Open+Sans%3A200%2C300%2C400%2C400i%2C500%2C600%2C700%7CLora%3A400%2C400i%2C700%2C700i%7CMaterial+Icons&amp;ver=10.5.15" type="text/css" media="all">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <?= css('assets/css/opac.css') ?>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,10 +48,11 @@
                 </nav>
             </div>
             <?php if($page->sidebar()->bool()): ?>
-                <div class="flex-aside">
-                    <img class="ad" src="<?= image('placeholder.png')->url() ?>">
+                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": <?= $page->delay() ?>, "pauseAutoPlayOnHover": false, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false}'>
+                    <?php snippet('slideshow', ['orientation' => 'portrait']) ?>
                 </div>
             <?php endif ?>
         </div>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>
