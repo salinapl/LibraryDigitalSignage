@@ -1,10 +1,10 @@
 <?php 
-    $gallery = page(page($page->slides())->gallery())->images();
+    $gallery = page($page->slides())->gallery()->images();
     $tags = page(page($page->slides())->tags());
 
 
 // <?php if ($page->parent()->title() = "OPAC Pages") {
-//     $gallery = page($slides->gallery())->images();
+//     $gallery = page($slides)->gallery()->images();
 //     $tags = page($slides->tags());
 // } else {
 //     $gallery = page($page->gallery())->images();
