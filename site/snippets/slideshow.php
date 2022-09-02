@@ -1,7 +1,6 @@
 <?php 
-    $gallery = page($page->slides())->gallery()->images();
-    $tags = page(page($page->slides())->tags());
-
+    $gallery = page($page->gallery())->images();
+    $gallery = $gallery->filterBy('tags', 'in', $page->tags()->split(','), ',');
 
 // <?php if ($page->parent()->title() = "OPAC Pages") {
 //     $gallery = page($slides)->gallery()->images();
@@ -11,9 +10,8 @@
 //     $tags = page($page->tags());
 // }
 
-// orientation variable (passed to snippet)
-$orientation = 'landscape';
- ?>
+// orientation variable MUST be passed by snippet
+?>
 
 <?php foreach ($gallery->sortBy('sort','asc') as $image): ?>
     <!-- filter for only images that are supposed to be visible -->
@@ -21,11 +19,15 @@ $orientation = 'landscape';
         <!-- match orientation to image -->
         <?php if($image->orientation() == $orientation): ?>
             <?php if($image->orientation() == 'portrait'): ?>
-                <div class="carousel-cell ad" style="background-image:url(<?= $image->resize(null, 1080)->url() ?>)">
+                <a 
+                <?php if ($image->link()->isNotEmpty()): ?>
+                    href="<?= $image->link()->url(); ?>"
+                <?php endif ?>
+                class="carousel-cell ad" style="background-image:url(<?= $image->resize(null, 1080)->url() ?>)">
             <?php else: ?>
-                <div class="carousel-cell ad" style="background-image:url(<?= $image->resize(1080, null)->url() ?>)">
+                <a class="carousel-cell ad" style="background-image:url(<?= $image->resize(1080, null)->url() ?>)">
             <?php endif ?>
-                </div>
+                </a>
         <?php endif ?>
     <?php endif ?>
 <?php endforeach ?>

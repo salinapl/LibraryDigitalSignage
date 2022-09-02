@@ -8,7 +8,7 @@ fields:
     type: files
     layout: cards
     template: image
-    info: "Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Category: {{ file.category }}"
+    info: "Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Tags: {{ file.tags }}"
     sortBy: expire desc
     expire: "{{ file.expire.toDate('Y-m-d') }}"
     image:

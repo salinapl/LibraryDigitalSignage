@@ -58,11 +58,11 @@ Sidebar: true
 
 ----
 
-Gallery: slideshows/selfcheck
+Delay: 9000
 
 ----
 
-Delay: 9000
+Gallery: galleries/primary-image-gallery
 
 ----
 

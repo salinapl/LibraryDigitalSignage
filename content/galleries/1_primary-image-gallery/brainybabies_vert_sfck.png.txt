@@ -6,6 +6,14 @@ Expire: 2032-12-31
 
 ----
 
+Tags: youth
+
+----
+
+Link: https://salinapubliclibrary.org/programs-services/youth/storytime/
+
+----
+
 Category: youth
 
 ----
@@ -15,10 +23,6 @@ Selfcheck: true
 ----
 
 Text: 
-
-----
-
-Link: https://salinapubliclibrary.org/programs-services/youth/storytime/
 
 ----
 

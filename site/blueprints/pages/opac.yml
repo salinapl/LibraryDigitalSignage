@@ -27,8 +27,18 @@ columns:
           - "Disabled"
           - "Enabled"
         label: Show Sidebar
-      slides:
-        label: Slideshow
+      delay:
+        label: Delay Between Slides (Milliseconds)
+        type: number
+        min: 1000
+      gallery:
+        label: Image Gallery
         type: select
         options: query
-        query: site.find('slideshows').children
+        query: site.find('galleries').children
+      tags:
+        label: Campaign Categories
+        type: tags
+        accept: options
+        options: query
+        query: site.index.pluck('Tags', ',', true)

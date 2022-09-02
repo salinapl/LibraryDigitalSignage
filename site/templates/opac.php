@@ -1,8 +1,4 @@
 <!doctype html>
-<?php 
-    $slides = page($page->slides());
-    $opac = TRUE;
-?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
