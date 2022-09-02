@@ -1,0 +1,15 @@
+title: Goal Page
+icon: 🎉
+fields:
+  headline:
+    label: Headline
+    type: text
+  goal:
+    label: Goal Number
+    type: number
+  current:
+    label: Current Number
+    type: number
+  textbody:
+    label: Text Body
+    type: textarea

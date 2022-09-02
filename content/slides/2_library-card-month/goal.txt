@@ -1,0 +1,22 @@
+Title: Library Card month
+
+----
+
+Headline: New Patrons Signed Up
+
+----
+
+Goal: 300
+
+----
+
+Current: 350
+
+----
+
+Textbody:
+
+In September the library is aiming to have 300 new patrons sign up for library cards, Help us reach this goal by referring others to sign up or sign up yourself and you will be entered to win one of the following prizes:
+- prize 1
+- prize 2
+- prize 3

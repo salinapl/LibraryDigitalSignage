@@ -66,7 +66,7 @@ Gallery: galleries/primary-image-gallery
 
 ----
 
-Tags: adult, youth
+Tags: event-web, adult, youth
 
 ----
 

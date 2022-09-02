@@ -1,16 +1,15 @@
 <?php 
+    $url = $_SERVER['REQUEST_URI'];
     $gallery = page($page->gallery())->images();
     $gallery = $gallery->filterBy('tags', 'in', $page->tags()->split(','), ',');
 
-// <?php if ($page->parent()->title() = "OPAC Pages") {
-//     $gallery = page($slides)->gallery()->images();
-//     $tags = page($slides->tags());
-// } else {
-//     $gallery = page($page->gallery())->images();
-//     $tags = page($page->tags());
-// }
-
 // orientation variable MUST be passed by snippet
+// set variable for orientation
+if(strpos($url, 'portrait')) {
+    $orientation = 'portrait';
+} elseif(strpos($url, 'landscape')){
+    $orientation = 'landscape';
+} 
 ?>
 
 <?php foreach ($gallery->sortBy('sort','asc') as $image): ?>

@@ -5,17 +5,9 @@ Title: Public Library Digital Signage
 Dslinks:
 
 - 
-  link: http://ds.salinalibrary.info/selfcheck/
+  link: >
+    http://ds.salinalibrary.info/slideshows/selfcheck
   description: Digital Signage (Autodetect)
-- 
-  link: http://ds.salinalibrary.info/all/
-  description: 'Digital Signage (all - Landscape)'
-- 
-  link: http://ds.salinalibrary.info/adult
-  description: 'Digital Signage (Only Adult - Landscape)'
-- 
-  link: http://ds.salinalibrary.info/youth
-  description: 'Digital Signage (Only Youth - Landscape)'
 
 ----
 
@@ -35,3 +27,11 @@ Otherlinks:
 - 
   link: 'https://docs.google.com/document/d/11JA1ImsvIz1rJELRA33sRAHGArRCgJRI1gD8c71r_h4/edit#'
   description: Digital Signage Documentation
+
+----
+
+Home: - home
+
+----
+
+Tags: 

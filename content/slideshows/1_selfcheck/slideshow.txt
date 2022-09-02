@@ -10,4 +10,4 @@ Gallery: galleries/primary-image-gallery
 
 ----
 
-Tags: adult, youth
+Tags: adult, youth, event-web

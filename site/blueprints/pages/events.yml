@@ -1,6 +1,22 @@
-title: Event Test
+title: Web Slide Test
 icon: 🎉
 fields:
-  calendar:
+  embed:
     extends: fields/links
-    label: Calendar URL
+    label: Embed URL
+  start:
+    label: Active on
+    type: date
+    required: true
+    width: 1/4
+  expire:
+    label: Inactive on
+    type: date
+    required: true
+    width: 1/4
+  tags:
+    label: Campaign Category
+    type: select
+    accept: options
+    options: query
+    query: site.index.pluck('Tags', ',', true)

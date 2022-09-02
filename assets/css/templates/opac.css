@@ -22,6 +22,10 @@ i{
     top:3px;
     padding-right:3px;
 }
+iframe{
+    border: none;
+    overflow: hidden;
+}
 .flex-box{
     height: calc(100%-5rem);
 }

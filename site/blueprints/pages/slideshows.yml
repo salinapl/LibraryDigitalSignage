@@ -3,7 +3,7 @@ icon: 🎞️
 
 fields:
   tags:
-    label: Set Campaign Categories
+    label: Set Valid Campaign Categories
     type: tags
     # options: query
     # query: page.parent.pluck('tags', ';', true)
