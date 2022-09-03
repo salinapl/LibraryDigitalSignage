@@ -8,6 +8,8 @@ Icon
 #--------------
 /kirby/*
 composer.json
+.htaccess
+index.php
 
 # Temporary files
 # ---------------

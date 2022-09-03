@@ -18,11 +18,11 @@ columns:
         type: pages
         headline: Campaign Slideshows
         parent: kirby.page("slideshows")
-      slides:
+      webslides:
         layout: list
         type: pages
         headline: Campaign Web Slides
-        parent: kirby.page("slides")
+        parent: kirby.page("web-slides")
       opac:
         layout: list
         type: pages

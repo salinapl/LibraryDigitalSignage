@@ -9,9 +9,9 @@
         <li><a href="<?= $link->url() ?>/landscape">Campaign: <?= $link->title() ?> (Portrait)</a></li>
     <?php endforeach ?>
 </ul>
-<h2>Web Slides</h2>
+<h2>Web-Slides</h2>
 <ul>
-    <?php foreach ($site->page('slides')->children() as $link): ?>
+    <?php foreach ($site->page('web-slides')->children() as $link): ?>
         <li><a href="<?= $link->url() ?>"><?= $link->title() ?></a></li>
     <?php endforeach ?>
 </ul>

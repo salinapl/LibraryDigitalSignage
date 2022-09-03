@@ -1,5 +1,5 @@
 <?php 
-    $webslides = page('slides')->children();
+    $webslides = page('web-slides')->children();
     $webslides = $webslides->filterBy('tags', 'in', $page->tags()->split(','), ',');
 
 // orientation variable MUST be passed by snippet
