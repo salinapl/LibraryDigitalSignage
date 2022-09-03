@@ -46,7 +46,7 @@ Follow instructions provided in the release notes. We will generally advise to b
 
 ## A Note about Licensing
 
-While LibSignTool is provided free under the GTKv3 License, Kirby is not.
+While LibSignTool is provided free under the GPLv3 License, Kirby is not.
 
 You can try Kirby on your local machine or on a test
 server as long as you need to make sure it is the right
