@@ -1,6 +1,6 @@
 
 # LibSignTool - Library Digital Signage System using Kirby
-A Simple and flexible digital signage and OPAC greeter built for public terminals using [KirbyCMS](https://getkirby.com)
+A Simple and flexible digital signage and OPAC greeter built for public terminals using [Kirby](https://getkirby.com)
 
 <img src="https://user-images.githubusercontent.com/36831696/188289361-3358749c-edcd-40d5-abde-3f65833bad03.jpg" width="30%"></img> <img src="https://user-images.githubusercontent.com/36831696/188289371-733f02eb-c18a-4445-8a51-b6b436f33345.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/36831696/188289377-1bfe6173-a6ec-4a04-b4ae-42a85867a2e3.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/36831696/188289378-b31aeaad-3f0b-4f88-843b-7f9efdd477a6.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/36831696/188289379-821063ab-6074-44e4-8ee5-8491d405f526.png" width="30%"></img> <img src="https://user-images.githubusercontent.com/36831696/188289381-c6043f8e-874e-4639-bb4b-9154b8b0e16f.png" width="30%"></img> 
 
@@ -18,17 +18,17 @@ A Simple and flexible digital signage and OPAC greeter built for public terminal
 
 ## Download and Install
 
-This repository only contains the content pages of the site, you will need to download the latest KirbyCMS plainkit seprately.
+This repository only contains the content pages of the site, you will need to download the latest Kirby plainkit seprately.
 
-1. Before Starting, please check that your webserver meets KirbyCMS' minimum requirements **[listed here](https://getkirby.com/docs/guide/quickstart#requirements)** and read the provided getting started documentation.
-1. Download the latest release of **[KirbyCMS Plainkit](https://github.com/getkirby/plainkit)**
+1. Before Starting, please check that your webserver meets Kirby' minimum requirements **[listed here](https://getkirby.com/docs/guide/quickstart#requirements)** and read the provided getting started documentation.
+1. Download the latest release of **[Kirby Plainkit](https://github.com/getkirby/plainkit)**
 1. Extract the plainkit to your Website Folder
 1. Download the latest release of LibSignTool from the **[releases page](https://github.com/salinapl/LibSignTool/releases)**
 1. Extract LibSignTool into the plainkit-main folder
 1. Some files may ask to be overwritten, approve all overwrites.
 1. Make sure hidden files such as .htaccess copied over, as these are required for the site to operate correctly.
 1. Start your webserver and navigate to **yourdomain.example.com/location-of-kirbycms-install/panel** and you will be asked to create an account.
-1. After creating the account, you will be able to log in and start adding images to create a campaign. The download includes example pages to get started, but you can edit or remove these pages as long as you replace them with ones using the same or similar templates. Doing more than that will require knowledge of how KirbyCMS works. Examples of what templates do what will be provided later in this document.
+1. After creating the account, you will be able to log in and start adding images to create a campaign. The download includes example pages to get started, but you can edit or remove these pages as long as you replace them with ones using the same or similar templates. Doing more than that will require knowledge of how Kirby works. Examples of what templates do what will be provided later in this document.
 
 ## Backing up and Installing new Versions
 
@@ -36,9 +36,9 @@ This repository only contains the content pages of the site, you will need to do
 Kirby is a Flat-file CMS and does not require a database, which makes it very easy to
 install and backup. Just copy the folder you installed Kirby and LibSignTool to into your backup location to back it up.
 
-To upgrade Kirby, simply download the newest version of the plainkit, Delete the "kirby" and "media" folders from your install folder, and copy the new versions from the plainkit into the folder. Always refer to the offical KirbyCMS documentation for upgrade instructions as these are subject to change between releases.
+To upgrade Kirby, simply download the newest version of the plainkit, Delete the "kirby" and "media" folders from your install folder, and copy the new versions from the plainkit into the folder. Always refer to the offical Kirby documentation for upgrade instructions as these are subject to change between releases.
 
-LibSignTool is built on KirbyCMS 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as KirbyCMS 4
+LibSignTool is built on Kirby 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as Kirby 4
 
 ### LibSignTool
 
@@ -74,7 +74,7 @@ You can learn more about Kirby at [getkirby.com](https://getkirby.com).
     
 ## Issues
 
-We do not develop for KirbyCMS, for issues getting KirbyCMS up and running, please contact that project. We only provide the website content files to host on KirbyCMS to use as a Digital Signage Platform.
+We do not develop for Kirby, for issues getting Kirby up and running, please contact that project. We only provide the website content files to host on Kirby to use as a Digital Signage Platform.
 
 If you have a Github account, please report issues directly on Github: <https://github.com/salinapl/LibSignTool/issues>
 
