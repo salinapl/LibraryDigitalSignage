@@ -10,6 +10,9 @@ Icon
 composer.json
 .htaccess
 index.php
+site/blueprints/users
+site/blueprints/users/*
+site/blueprints/users/default.yml
 
 # Temporary files
 # ---------------
@@ -57,4 +60,7 @@ index.php
 # ---------------
 
 /site/config/.license
+
+# Analytics
+#----------------
 site/snippets/analytics.php

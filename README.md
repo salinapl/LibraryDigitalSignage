@@ -5,6 +5,7 @@ A Simple and flexible digital signage and OPAC greeter built for public terminal
 ## Features
 
 - Auto Detection of Landscape or Portrait Display for default campaign
+- Smart asset management: resizes uploaded images to proper size before loading
 - Manually Choose orientation via URL Path
 - Capability for multiple slideshow campaigns organized by a tagging system
 - Web-based live slides for tasks such as calendar events or event goals
@@ -26,9 +27,23 @@ This repository only contains the content pages of the site, you will need to do
 1. Start your webserver and navigate to **yourdomain.example.com/location-of-kirbycms-install/panel** and you will be asked to create an account.
 1. After creating the account, you will be able to log in and start adding images to create a campaign. The download includes example pages to get started, but you can edit or remove these pages as long as you replace them with ones using the same or similar templates. Doing more than that will require knowledge of how KirbyCMS works. Examples of what templates do what will be provided later in this document.
 
+## Backing up and Installing new Versions
+
+### Kirby
+Kirby is a Flat-file CMS and does not require a database, which makes it very easy to
+install and backup. Just copy the folder you installed Kirby and LibSignTool to into your backup location to back it up.
+
+To upgrade Kirby, simply download the newest version of the plainkit, Delete the "kirby" and "media" folders from your install folder, and copy the new versions from the plainkit into the folder. Always refer to the offical KirbyCMS documentation for upgrade instructions as these are subject to change between releases.
+
+LibSignTool is built on KirbyCMS 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as KirbyCMS 4
+
+### LibSignTool
+
+Follow instructions provided in the release notes. We will generally advise to back up the site, content, and any other folders you have modified before upgrading. Typically extracting everything from the upgrade archive but the content folder is sufficent to avoid issues with data loss, but a backup is always recommended before attempting an upgrade.
+
 ## A Note about Licensing
 
-While LibSignTool is provided free and clear to use and modify, Kirby is not.
+While LibSignTool is provided free under the GTKv3 License, Kirby is not.
 
 You can try Kirby on your local machine or on a test
 server as long as you need to make sure it is the right
@@ -53,15 +68,6 @@ You can learn more about Kirby at [getkirby.com](https://getkirby.com).
 ### Kirby Support
 
 <https://getkirby.com/support>
-
-## Backing up and Installing new Versions
-
-Kirby is a Flat-file CMS and does not require a database, which makes it very easy to
-install and backup. Just copy the folder you installed Kirby and LibSignTool to into your backup location to back it up.
-
-To upgrade, simply download the newest version of the plainkit, Delete the "kirby" and "media" folders from your install folder, and copy the new versions from the plainkit into the folder. Always refer to the offical KirbyCMS documentation for upgrade instructions as these are subject to change between releases.
-
-LibSignTool is built on KirbyCMS 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as KirbyCMS 4
     
 ## Issues
 
