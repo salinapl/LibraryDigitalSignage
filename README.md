@@ -20,7 +20,7 @@ A Simple and flexible digital signage and OPAC greeter built for public terminal
 
 This repository only contains the content pages of the site, you will need to download the latest Kirby plainkit seprately.
 
-1. Before Starting, please check that your webserver meets Kirby' minimum requirements **[listed here](https://getkirby.com/docs/guide/quickstart#requirements)** and read the provided getting started documentation.
+1. Before Starting, please check that your webserver meets Kirbys minimum requirements **[listed here](https://getkirby.com/docs/guide/quickstart#requirements)** and read the provided getting started documentation.
 1. Download the latest release of **[Kirby Plainkit](https://github.com/getkirby/plainkit)**
 1. Extract the plainkit to your Website Folder
 1. Download the latest release of LibSignTool from the **[releases page](https://github.com/salinapl/LibSignTool/releases)**
