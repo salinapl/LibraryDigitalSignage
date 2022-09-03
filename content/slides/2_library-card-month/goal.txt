@@ -2,7 +2,7 @@ Title: Library Card month
 
 ----
 
-Headline: New Patrons Signed Up
+Headline: September is National Library Card Sign-Up Month!
 
 ----
 
@@ -10,13 +10,27 @@ Goal: 300
 
 ----
 
-Current: 350
+Current: 50
 
 ----
 
 Textbody:
 
-In September the library is aiming to have 300 new patrons sign up for library cards, Help us reach this goal by referring others to sign up or sign up yourself and you will be entered to win one of the following prizes:
-- prize 1
-- prize 2
-- prize 3
+Stop by the Library and get your FREE library card today!
+
+Unlock a world of learning and fun with thousands of materials and online resources.
+Current SPL card holders, if you refer someone this month who signs up for a card -- you’re eligible for a prize drawing!
+
+Questions? Just ask our staff!
+
+----
+
+Start: 2022-09-01
+
+----
+
+Expire: 2022-09-30
+
+----
+
+Tags: goal-web

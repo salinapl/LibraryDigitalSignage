@@ -6,12 +6,3 @@ icon: 🎛️
 
 options:
   changeStatus: false
-
-fields:
-  tags:
-    label: Set Valid Campaign Categories
-    type: tags
-    width: 1
-
-
-

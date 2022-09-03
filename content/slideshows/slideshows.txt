@@ -2,4 +2,8 @@ Title: Campaign Slideshows
 
 ----
 
+Defaults: slideshows/selfcheck
+
+----
+
 Tags: 

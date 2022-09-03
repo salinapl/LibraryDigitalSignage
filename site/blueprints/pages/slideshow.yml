@@ -15,4 +15,4 @@ fields:
     type: multiselect
     accept: options
     options: query
-    query: site.index.pluck('Tags', ',', true)
+    query: site.tags.split(',')

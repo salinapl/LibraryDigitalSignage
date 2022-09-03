@@ -2,9 +2,11 @@ title: slideshows
 icon: 🎞️
 
 fields:
-  tags:
-    label: Set Valid Campaign Categories
-    type: tags
+  defaults:
+    label: Default Autodetect Slideshow
+    type: select
+    options: query
+    query: site.find('slideshows').children
     # options: query
     # query: page.parent.pluck('tags', ';', true)
     # query: page.links.toStructure

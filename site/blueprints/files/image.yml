@@ -30,7 +30,7 @@ columns:
             width: 1
             type: multiselect
             options: query
-            query: site.index.pluck('Tags', ',', true)
+            query: site.tags.split(',')
           opac:
             label: OPAC Link
             type: headline

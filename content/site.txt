@@ -2,12 +2,11 @@ Title: Public Library Digital Signage
 
 ----
 
-Dslinks:
+Otherlinks: 
 
-- 
-  link: >
-    http://ds.salinalibrary.info/slideshows/selfcheck
-  description: Digital Signage (Autodetect)
+----
+
+Tags: adult, youth, event-web, goal-web, test
 
 ----
 
@@ -22,16 +21,4 @@ Opaclinks:
 
 ----
 
-Otherlinks:
-
-- 
-  link: 'https://docs.google.com/document/d/11JA1ImsvIz1rJELRA33sRAHGArRCgJRI1gD8c71r_h4/edit#'
-  description: Digital Signage Documentation
-
-----
-
 Home: - home
-
-----
-
-Tags: 

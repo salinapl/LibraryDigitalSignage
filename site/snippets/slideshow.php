@@ -3,8 +3,9 @@
     $gallery = page($page->gallery())->images();
     $gallery = $gallery->filterBy('tags', 'in', $page->tags()->split(','), ',');
 
-// orientation variable MUST be passed by snippet
-// set variable for orientation
+// orientation can be passed by snippet if the inclusion
+// Is embeded into the page (see opac page for example)
+// Otherwise, it determines orientation by looking at the URL
 if(strpos($url, 'portrait')) {
     $orientation = 'portrait';
 } elseif(strpos($url, 'landscape')){

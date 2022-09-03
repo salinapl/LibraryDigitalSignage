@@ -34,18 +34,16 @@ columns:
     label: Links
     type: structure
     fields:
-      dslinks:
-        extends: fields/links
-        label: Digital Signage Links
-      opaclinks:
-        extends: fields/links
-        label: OPAC Links
+      docs:
+        type: info
+        label: Documentation
+        text: |
+          Please check out the following information for details on how to use this site: 
+          * (link: https://github.com/salinapl/LibraryDigitalSignage text: Github Page)
+          * (link: # text: Internal Library Documentation)
       otherlinks:
         extends: fields/links
         label: Other/Misc Links
-      home:
-        layout: list
-        type: pages
-        label: Set Global Settings
-        type: pages
-        parent: kirby.page("home")
+      tags:
+        label: Set Valid Campaign Categories
+        type: tags
