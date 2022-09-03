@@ -78,8 +78,4 @@ We do not develop for Kirby, for issues getting Kirby up and running, please con
 
 If you have a Github account, please report issues directly on Github: <https://github.com/salinapl/LibSignTool/issues>
 
-Or you can email the maintainers directly at tech.lib@salinapublic.org
-
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
-The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
+Or you can email the maintainers directly at <tech.lib@salinapublic.org>
