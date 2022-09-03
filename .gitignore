@@ -38,8 +38,8 @@ index.php
 # Cache Files
 # ---------------
 
-#/site/cache/*
-#!/site/cache/index.html
+/site/cache/*
+!/site/cache/index.html
 
 # Accounts
 # ---------------
@@ -49,9 +49,9 @@ index.php
 
 # Sessions
 # ---------------
-#/site/sessions
-#/site/sessions/*
-#!/site/sessions/index.html
+/site/sessions
+/site/sessions/*
+!/site/sessions/index.html
 
 # License
 # ---------------
