@@ -4,9 +4,6 @@
     </head>
     <body>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": <?= $page->delay() ?>, "pauseAutoPlayOnHover": false, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false}'>
-
-            <?php snippet('slideshow', ['orientation' => 'landscape']) ?>
-            <?php snippet('webslide') ?>
-
+        <?php snippet('slideshow', ['orientation' => 'landscape']) ?>
         </div>
         <?php snippet('footer') ?>

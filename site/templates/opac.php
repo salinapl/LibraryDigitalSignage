@@ -25,7 +25,6 @@
             <?php if($page->sidebar()->bool()): ?>
                 <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": <?= $page->delay() ?>, "pauseAutoPlayOnHover": false, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false}'>
                     <?php snippet('slideshow', ['orientation' => 'portrait']) ?>
-                    <?php snippet('webslide') ?>
                 </div>
             <?php endif ?>
         </div>

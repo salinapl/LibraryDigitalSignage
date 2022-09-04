@@ -40,13 +40,13 @@ site/blueprints/users/default.yml
 
 # Cache Files
 # ---------------
-
+/site/cache
 /site/cache/*
 !/site/cache/index.html
 
 # Accounts
 # ---------------
-
+/site/accounts
 /site/accounts/*
 !/site/accounts/index.html
 
