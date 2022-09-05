@@ -25,29 +25,20 @@ columns:
             type: date
             required: true
             width: 1/4
-          category:
-            label: Category
-            width: 1/4
-            type: select
-            options:
-              youth: Youth
-              adult: Adult
-          selfcheck:
-            label: Share to Selfchecks?
-            width: 1/4
-            type: toggle
+          tags:
+            label: Tags
+            width: 1
+            type: multiselect
+            options: query
+            query: site.tags.split(',')
           opac:
-            label: OPAC Button
+            label: OPAC Link
             type: headline
           info:
             type: info
             label: Pro tip
-            text: If either of these fields are blank, the button will not populate.
-          text:
-            label: Text for Button
-            width: 1/2
-            type: text
+            text: If this fields are blank, the ad will not be clickable. Make sure the URL is also on the OPAC whitelist.
           link:
-            label: URL for Button
-            width: 1/2
+            label: URL to Event
+            width: 1
             type: url

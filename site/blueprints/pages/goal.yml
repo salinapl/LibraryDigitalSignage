@@ -1,0 +1,31 @@
+title: Goal Page
+icon: 🎉
+fields:
+  headline:
+    label: Headline
+    type: text
+  goal:
+    label: Goal Number
+    type: number
+  current:
+    label: Current Number
+    type: number
+  textbody:
+    label: Text Body
+    type: textarea
+  start:
+    label: Active on
+    type: date
+    required: true
+    width: 1/4
+  expire:
+    label: Inactive on
+    type: date
+    required: true
+    width: 1/4
+  tags:
+    label: Campaign Category
+    type: select
+    accept: options
+    options: query
+    query: site.tags.split(',')

@@ -1,0 +1,19 @@
+Title: error-slide
+
+----
+
+Icon: bx bx-error-circle
+
+----
+
+Headline: No Active Slides Set
+
+----
+
+Body:
+
+No active slides were found. Please contact staff in charge of digital signage to resolve the issue.
+- Check that all Campaigns are not expired.
+- Check Selected Campaign tags to make sure active Campaigns are not excluded.
+
+----

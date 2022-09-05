@@ -1,0 +1,12 @@
+title: slideshows
+icon: 📺
+
+fields:
+  defaults:
+    label: Default Autodetect Slideshow
+    type: select
+    options: query
+    query: site.find('slideshows').children
+    # options: query
+    # query: page.parent.pluck('tags', ';', true)
+    # query: page.links.toStructure

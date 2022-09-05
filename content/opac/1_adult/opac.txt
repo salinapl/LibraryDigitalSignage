@@ -1,0 +1,80 @@
+Title: Library OPAC - Adult
+
+----
+
+Headline: I want to...
+
+----
+
+Links:
+
+- 
+  icon: bx bx-globe
+  link: 'https://www.salinapubliclibrary.org?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Explore the Website'
+- 
+  icon: bx bx-calendar
+  link: 'https://www.salinapubliclibrary.org/events?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Discover Events'
+- 
+  icon: bx bx-book-reader
+  link: 'https://salinapubliclibrary.org/research/databases-a-z?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Search the Databases'
+- 
+  icon: bx bx-game
+  link: 'https://salinapubliclibrary.org/programs-services/youth/learning-games?utm_source=opac&utm_medium=website&utm_campaign=adult'
+  description: ' Play Learning Games'
+- 
+  icon: bx bx-devices
+  link: >
+    https://salinapubliclibrary.org/books-media/emedia/
+  description: ' Explore eMaterials'
+- 
+  icon: bx bx-search
+  link: >
+    https://discover.salinapubliclibrary.org/
+  description: ' Search the Catalog'
+- 
+  icon: bx bx-user
+  link: >
+    https://discover.salinapubliclibrary.org/MyAccount/Home
+  description: View My Account
+
+----
+
+Ref:
+
+- 
+  link: https://boxicons.com/
+  description: boxicons cheatsheet
+
+----
+
+Header-image: - logo.png
+
+----
+
+Sidebar: true
+
+----
+
+Delay: 9000
+
+----
+
+Gallery: galleries/primary-image-gallery
+
+----
+
+Tags: adult, youth, event-web, goal-web
+
+----
+
+Files:
+
+- logo.png
+- placeholder.png
+
+----
+
+Htmltitle: Welcome to Salina Public Library

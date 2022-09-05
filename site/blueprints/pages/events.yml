@@ -1,0 +1,22 @@
+title: Web Slide Test
+icon: 🎉
+fields:
+  embed:
+    extends: fields/links
+    label: Embed URL
+  start:
+    label: Active on
+    type: date
+    required: true
+    width: 1/4
+  expire:
+    label: Inactive on
+    type: date
+    required: true
+    width: 1/4
+  tags:
+    label: Campaign Category
+    type: select
+    accept: options
+    options: query
+    query: site.tags.split(',')

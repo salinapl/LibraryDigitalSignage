@@ -1,1 +1,5 @@
-Title: Home
+Title: Select a Slideshow:
+
+----
+
+Htmltitle: Select a Slideshow

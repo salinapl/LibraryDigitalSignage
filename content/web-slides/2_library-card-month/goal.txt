@@ -1,0 +1,36 @@
+Title: Library Card month
+
+----
+
+Headline: September is National Library Card Sign-Up Month!
+
+----
+
+Goal: 300
+
+----
+
+Current: 50
+
+----
+
+Textbody:
+
+Stop by the Library and get your FREE library card today!
+
+Unlock a world of learning and fun with thousands of materials and online resources.
+Current SPL card holders, if you refer someone this month who signs up for a card -- you’re eligible for a prize drawing!
+
+Questions? Just ask our staff!
+
+----
+
+Start: 2022-09-01
+
+----
+
+Expire: 2022-09-30
+
+----
+
+Tags: goal-web

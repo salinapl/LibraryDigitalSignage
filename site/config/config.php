@@ -8,9 +8,29 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 return [
-    'debug' => true,
-    /* turn to FALSE when going live to hide debugging errors */
-
+  /*checks for landscape or portrait tag in URL*/
+  'routes' => [
+    [
+        'pattern' => 'slideshows/(:any)/landscape',
+        'action' => function ($value) {
+            $data = [
+              'orientation' => $value,
+            ];
+            return page('slideshows/selfcheck')->render($data);
+        }
+    ],
+    [
+      'pattern' => 'slideshows/(:any)/portrait',
+      'action' => function ($value) {
+          $data = [
+            'orientation' => $value,
+          ];
+          return page('slideshows/selfcheck')->render($data);
+      }
+    ]
+  ],
+  'debug' => true,
+  /* turn to FALSE when going live to hide debugging errors */
   'panel' =>[
     'install' => true
   ]

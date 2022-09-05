@@ -1,0 +1,11 @@
+label: Links
+type: structure
+fields:
+  link:
+    label: URL
+    type: url
+    width: 1/2
+  description:
+    label: Description
+    type: text
+    width: 1/2

@@ -1,0 +1,13 @@
+Title: selfcheck
+
+----
+
+Delay: 9000
+
+----
+
+Gallery: galleries/primary-image-gallery
+
+----
+
+Tags: adult, youth, event-web, goal-web
