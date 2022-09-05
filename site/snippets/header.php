@@ -1,11 +1,9 @@
 <!doctype html>
-<?php $url = $_SERVER['REQUEST_URI']; ?>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="refresh" content="1800; URL='<?= $url ?>'">
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <title><?= $page->htmltitle() ?></title>
         <?= css('assets/css/bootstrap-reboot.min.css') ?>

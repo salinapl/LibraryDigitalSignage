@@ -4,6 +4,9 @@ columns:
   left:
     width: 2/3
     fields:
+      htmltitle:
+        label: Page Title
+        type: text
       headline:
         label: Headline
         type: text
