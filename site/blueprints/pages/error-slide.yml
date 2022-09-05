@@ -1,0 +1,13 @@
+title: Error Notice
+icon: 🚨
+fields:
+  icon:
+    label: Icon
+    type: text
+    width: 1/2
+  headline:
+    label: Headline
+    type: text
+    width: 1/2
+  body:
+    type: textarea

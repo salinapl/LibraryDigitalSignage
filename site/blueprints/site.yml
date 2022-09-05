@@ -28,6 +28,9 @@ columns:
         type: pages
         headline: OPAC Pages
         parent: kirby.page("opac")
+        image:
+          cover: true
+          query: page.previewImage
 
   # The second column
   - width: 2/3

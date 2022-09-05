@@ -10,4 +10,4 @@ Gallery: galleries/primary-image-gallery
 
 ----
 
-Tags: youth, event-web, goal-web, adult
+Tags: adult, youth, event-web, goal-web
