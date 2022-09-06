@@ -3,7 +3,7 @@ icon: 🖼️
 status:
   draft: true
   listed: true
-fields:
+sections:
   images:
     type: files
     layout: cards
