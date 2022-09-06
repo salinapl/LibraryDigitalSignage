@@ -10,6 +10,7 @@ sections:
     template: image
     info: "Active on: {{ file.start}}</br>Inactive on: {{ file.expire }}</br>Tags: {{ file.tags }}"
     sortBy: expire desc
+    limit: 30
     expire: "{{ file.expire.toDate('Y-m-d') }}"
     image:
       ratio: 1/1
