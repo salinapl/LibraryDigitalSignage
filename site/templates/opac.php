@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <?= css('assets/css/boxicons.min.css') ?>
         <?= css('assets/css/flickity.min.css') ?>
         <?= css('assets/css/templates/opac.css') ?>
         <?php //snippet('analytics') ?>
@@ -24,7 +24,7 @@
             </div>
             <?php if($page->sidebar()->bool()): ?>
                 <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": <?= $page->delay() ?>, "pauseAutoPlayOnHover": false, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false}'>
-                    <?php snippet('slideshow', ['orientation' => 'portrait']) ?>
+                    <?php snippet('builder', ['orientation' => 'portrait']) ?>
                 </div>
             <?php endif ?>
         </div>

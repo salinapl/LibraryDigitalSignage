@@ -7,7 +7,7 @@
         <?php if(preg_match('/portrait|landscape/i', $url)):  ?>
             <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": <?= $page->delay() ?>, "pauseAutoPlayOnHover": false, "wrapAround": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false}'>
             
-            <?php snippet('slideshow') ?>
+            <?php snippet('builder') ?>
             </div>
         <?php else: ?>
             <script>

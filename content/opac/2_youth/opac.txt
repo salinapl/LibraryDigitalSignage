@@ -38,3 +38,31 @@ Links:
   link: >
     https://salinapubliclibrary.org/books-media/emedia/
   description: ' Explore eMaterials'
+
+----
+
+Ref:
+
+- 
+  link: https://boxicons.com/
+  description: boxicons Cheatsheet
+
+----
+
+Header-image: - logo.png
+
+----
+
+Sidebar: true
+
+----
+
+Delay: 9000
+
+----
+
+Gallery: galleries/primary-image-gallery
+
+----
+
+Tags: youth, event-web, goal-web
