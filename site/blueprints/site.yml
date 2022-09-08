@@ -7,6 +7,8 @@ columns:
         type: pages
         headline: Campaign Image Galleries
         parent: kirby.page("galleries")
+        template:
+          - gallery
         info: "{{ page.images.count }} image(s)"
         layout: cardlets
         empty: No galleries yet
@@ -18,16 +20,24 @@ columns:
         type: pages
         headline: Campaign Slideshows
         parent: kirby.page("slideshows")
+        template:
+          - slideshow
       webslides:
         layout: list
         type: pages
         headline: Campaign Web Slides
         parent: kirby.page("web-slides")
+        template:
+          - events
+          - goal
+          - error-slide
       opac:
         layout: list
         type: pages
         headline: OPAC Pages
         parent: kirby.page("opac")
+        template:
+          - opac
         image:
           cover: true
           query: page.previewImage
