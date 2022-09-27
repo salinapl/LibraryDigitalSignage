@@ -4,9 +4,10 @@
     }
 
     body {
-	display: flex;
+	    display: flex;
         height: 100%;
-	overflow: hidden;
+	    overflow: hidden;
+        touch-action: none;
     }
 
     .main-carousel {
