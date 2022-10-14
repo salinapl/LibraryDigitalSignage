@@ -13,7 +13,7 @@
         </div>
         <div class="text-main">
             <h2>Goal - <?= $page->current() ?> / <?= $page->goal() ?></h2>
-            <p><?= markdown($page->textbody()) ?></p>
+            <p><?= kirbytext($page->textbody()) ?></p>
         </div>
     </body>
 </html>
