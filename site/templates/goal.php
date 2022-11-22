@@ -12,7 +12,11 @@
             <div class="progress-bar progress-round" style="width:<?=$percent ?>%"></div>
         </div>
         <div class="text-main">
-            <h2>Goal - <?= $page->current() ?> / <?= $page->goal() ?></h2>
+            <?php if($page->dollar()->bool()): ?>
+                <h2>Goal - $<?= $page->current() ?> / $<?= $page->goal() ?></h2>
+            <?php else: ?>
+                <h2>Goal - <?= $page->current() ?> / <?= $page->goal() ?></h2>
+            <?php endif ?>
             <p><?= kirbytext($page->textbody()) ?></p>
         </div>
     </body>

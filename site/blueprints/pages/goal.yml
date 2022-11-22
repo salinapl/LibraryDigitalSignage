@@ -10,6 +10,11 @@ fields:
   current:
     label: Current Number
     type: number
+  dollar:
+    label: Cash Goal
+    type: toggle
+      - "Disabled"
+      - "Enabled"
   textbody:
     label: Text Body
     type: textarea

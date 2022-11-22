@@ -41,6 +41,11 @@ body{
     border-radius: .5rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
 }
+.text-main img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
 .progress-wrapper{
     margin: 0 auto;
     width: 100%;
@@ -63,4 +68,14 @@ body{
 .progress-bar{}
 .progress-round{
     border-radius: .5rem!important;
+}
+@media screen and (max-width: 1500px) {
+    .text-main img{
+        width:50%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .text-main img{
+        width:80%;
+    }
 }
