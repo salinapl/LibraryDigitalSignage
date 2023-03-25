@@ -17,3 +17,5 @@ No active slides were found. Please contact staff in charge of digital signage t
 - Check Selected Campaign tags to make sure active Campaigns are not excluded.
 
 ----
+
+Uuid: U0gRHNcP0pTD6NxU

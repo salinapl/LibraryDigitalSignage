@@ -2,6 +2,10 @@ Title: Library OPAC - Adult
 
 ----
 
+Htmltitle: Welcome to Salina Public Library
+
+----
+
 Headline: I want to...
 
 ----
@@ -50,7 +54,7 @@ Ref:
 
 ----
 
-Header-image: - logo.png
+Header-image: - file://MKmlh9Kkm1sri9ck
 
 ----
 
@@ -66,10 +70,6 @@ Gallery: galleries/primary-image-gallery
 
 ----
 
-Tags: adult, youth, event-web, goal-web
-
-----
-
 Files:
 
 - logo.png
@@ -77,4 +77,4 @@ Files:
 
 ----
 
-Htmltitle: Welcome to Salina Public Library
+Uuid: LeGWKOMCnrbrpJbV

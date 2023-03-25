@@ -1,0 +1,17 @@
+Title: slideshow b
+
+----
+
+Delay: 4000
+
+----
+
+Gallery: galleries/primary-image-gallery
+
+----
+
+Tags: adult
+
+----
+
+Uuid: UxvJcPyV4rN4G8mr

@@ -17,7 +17,7 @@ site/blueprints/users/default.yml
 # Temporary files
 # ---------------
 
-
+/misc/*
 /media/*
 !/media/index.html
 
@@ -64,6 +64,3 @@ site/blueprints/users/default.yml
 # Analytics
 #----------------
 site/snippets/analytics.php
-chatgpt-notes01.pdf
-chatgpt-notes02.pdf
-bingchat-notes01.png
