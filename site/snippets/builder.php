@@ -16,7 +16,7 @@
                     ->images()
                     ->filterBy('tags', 'in', $page->tags()->split(','), ',');
     
-    // Filters images further by orientation and resizes the images
+    // Filters images further by orientation
     $gallery = $gallery->filter(function ($image) use ($orientation) {
         return $image->orientation() == $orientation;
     });
