@@ -7,9 +7,7 @@ Icon
 # Program files
 #--------------
 /kirby/*
-composer.json
 .htaccess
-index.php
 site/blueprints/users
 site/blueprints/users/*
 site/blueprints/users/default.yml
