@@ -1,17 +1,17 @@
 :root {
-    --spl-cyan:#00bef2;
-    --spl-dark-blue:#004d71;
-    --spl-tan:#ffc46c;
-    --spl-black:#2e2926;
-    --spl-gray:#65666a;
-    --spl-light-gray:#fafafa;
+    --color-01:#00bef2;
+    --color-02:#004d71;
+    --color-03:#ffc46c;
+    --color-04:#2e2926;
+    --color-05:#65666a;
+    --color-06:#fafafa;
 }
 body {
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-items: center;
-    background: var(--spl-black);
+    background: var(--color-04);
     font-family: 'Open Sans', 'Helvetica','Arial', sans-serif;
 }
 html,body {
@@ -42,7 +42,7 @@ nav {
 }
 .flex-box {
     flex-wrap: nowrap;
-    background: var(--spl-light-gray);
+    background: var(--color-06);
     border-radius: .5rem;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
     padding: 1rem;
@@ -67,7 +67,7 @@ h1 {
     font-size: 2.2em;
     margin-bottom: 2rem;
     font-weight: 600;
-    color: var(--spl-black)
+    color: var(--color-04)
 }
 .logo img {
     padding-bottom:1em;
@@ -78,9 +78,9 @@ h1 {
 .flex-box nav a {
     display: block;
     width:100%;
-    color: var(--spl-light-gray);
+    color: var(--color-06);
     border-radius: .5rem;
-    background: var(--spl-cyan);
+    background: var(--color-01);
     padding: 1.5rem;
     font-size: 1.5em;
     text-align: center;
@@ -92,7 +92,7 @@ h1 {
     text-decoration: none;
 }
 .flex-box nav a:hover {
-    background: var(--spl-dark-blue);
+    background: var(--color-02);
 }
 .main-carousel{
    width: 425px;
@@ -112,7 +112,7 @@ h1 {
 }
 @media screen and (max-width: 850px) {
     body{
-        background: var(--spl-light-gray);
+        background: var(--color-06);
     }
     .flex-box {
         flex-wrap: wrap;
