@@ -11,25 +11,16 @@ return [
   /*checks for landscape or portrait tag in URL*/
   'routes' => [
     [
-        'pattern' => 'slideshows/(:any)/landscape',
-        'action' => function ($value) {
-            $data = [
-              'orientation' => $value,
-            ];
-            return page('slideshows/selfcheck')->render($data);
-        }
-    ],
-    [
-      'pattern' => 'slideshows/(:any)/portrait',
-      'action' => function ($value) {
+      'pattern' => 'slideshows/(:any)/(:any)',
+      'action' => function ($subpage, $orientation) {
           $data = [
-            'orientation' => $value,
+            'orientation' => $orientation,
           ];
-          return page('slideshows/selfcheck')->render($data);
+          return page('slideshows/' . $subpage)?->render($data);
       }
     ]
   ],
-  'debug' => false,
+  'debug' => true,
   /* turn to FALSE when going live to hide debugging errors */
   'panel' =>[
     'install' => true

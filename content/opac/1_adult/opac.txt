@@ -70,6 +70,10 @@ Gallery: galleries/primary-image-gallery
 
 ----
 
+Tags: adult
+
+----
+
 Files:
 
 - logo.png

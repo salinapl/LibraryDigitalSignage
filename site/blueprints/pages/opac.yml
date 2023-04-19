@@ -36,7 +36,7 @@ columns:
         min: 1000
       gallery:
         label: Image Gallery
-        type: select
+        type: pages
         options: query
         query: site.find('galleries').children
       tags:

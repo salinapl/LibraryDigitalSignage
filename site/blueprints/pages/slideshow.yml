@@ -7,8 +7,7 @@ fields:
     min: 1000
   gallery:
     label: Image Gallery
-    type: select
-    options: query
+    type: pages
     query: site.find('galleries').children
   tags:
     label: Campaign Categories

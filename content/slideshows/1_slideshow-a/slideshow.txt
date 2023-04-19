@@ -1,0 +1,17 @@
+Title: slideshow-a
+
+----
+
+Delay: 9000
+
+----
+
+Gallery: - page://7lG7ZNp0eh31DZ6N
+
+----
+
+Tags: youth, event-web
+
+----
+
+Uuid: Vt7XIvsdmujjLNoN

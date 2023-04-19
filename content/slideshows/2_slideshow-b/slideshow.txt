@@ -6,7 +6,10 @@ Delay: 4000
 
 ----
 
-Gallery: galleries/primary-image-gallery
+Gallery:
+
+- page://GGzfwWndh6GlQPo8
+- page://7lG7ZNp0eh31DZ6N
 
 ----
 
