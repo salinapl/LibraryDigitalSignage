@@ -42,6 +42,9 @@ To upgrade Kirby, simply download the newest version of the plainkit, Delete the
 
 LibSignTool is built on Kirby 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as Kirby 4
 
+#### Kirby 4
+Kirby 4 has been announced with a licensing change that requires kirby 3 owners to buy a new license. looking at the feature set in Kirby 4, we are planning to upgrade as I see several features we can utilize that would have required adding required extensions before (one example is the color palletes tool, I was already planning a theming feature for web slides, this tool would let us do theming without a needed extension. I will specify if a release is for Kirby 3 or 4, however after we upgrade to Kirby 4, we are unlikely to continue to support Kirby 3 in future releases.
+
 ### LibSignTool
 
 Follow instructions provided in the release notes. We will generally advise to back up the site, content, and any other folders you have modified before upgrading. Typically extracting everything from the upgrade archive but the content folder is sufficent to avoid issues with data loss, but a backup is always recommended before attempting an upgrade.
