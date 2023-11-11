@@ -30,6 +30,7 @@ columns:
         template:
           - events
           - goal
+          - goal2
           - error-slide
       opac:
         layout: list

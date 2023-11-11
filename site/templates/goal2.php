@@ -4,17 +4,13 @@
         $goal = $page->goal()->toInt();
         $numb = $page->current()->toInt();
         $percent = $numb / $goal * 100;
-        if($percent >= 100) {
-            $progress="sg100"
-        } elseif($percent >= 75) {
-            $progress="sg75"
-        } elseif($percent >= 50) {
-            $progress="sg50"
-        } elseif($percent >= 25) {
-            $progress="sg25"
-        } else {
-            unset($progress)
-        }
+        $progress = match (true) {
+            $percent >= 100 => "sg100",
+            $percent >= 75 => "sg75",
+            $percent >= 50 => "sg50",
+            $percent >= 25 => "sg25",
+            default => "sg0"
+        };
     ?>
     </head>
     <body>

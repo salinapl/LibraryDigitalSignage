@@ -23,23 +23,23 @@ h1{
     flex:2 1 50%;
 }
 .snowglobe{
-    background-image: url("assets/img/snowglobe_0.png");
+    background-image: url("/../../../assets/img/snowglobe_0.png");
     background-repeat: no-repeat;
     height:950px;
     background-size:750px;
     background-position: center;
 }
 .sg25{
-    background-image: url("assets/img/snowglobe_25.png");
+    background-image: url("/../../../assets/img/snowglobe_25.png");
 }
 .sg50{
-    background-image: url("assets/img/snowglobe_50.png");
+    background-image: url("/../../../assets/img/snowglobe_50.png");
 }
 .sg75{
-    background-image: url("assets/img/snowglobe_75.png");
+    background-image: url("/../../../assets/img/snowglobe_75.png");
 }
 .sg100{
-    background-image: url("assets/img/snowglobe_100.png");
+    background-image: url("/../../../assets/img/snowglobe_100.png");
 }
 .goal{
     font-size: 5em;
@@ -86,6 +86,38 @@ h1{
 .snowmask{
     position:relative;
     overflow:visible;
+}
+@media screen and (max-width:500px){
+    .snowglobe{
+        height:450px;
+        background-size:375px;
+    }
+    .text-main{
+        margin:.75rem;
+    }
+    .text-main h1{
+        font-size: 2em;
+        margin-bottom: 0px;
+    }
+    .goal{
+        font-size:2.5em;
+        bottom:-135px;
+    }
+    .total{
+        font-size:5em;
+        top:95px
+    }
+    .text-main > p:nth-child(2){
+        display:none;
+    }
+    .text-main p{
+        font-size:1.5em;
+        padding:.75rem;
+        margin:0px;
+    }
+    .text-main figure{
+        display:none;
+    }
 }
 @media screen and (max-width: 1100px) {
     body{
