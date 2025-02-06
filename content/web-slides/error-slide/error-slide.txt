@@ -2,7 +2,7 @@ Title: error-slide
 
 ----
 
-Icon: bx bx-error-circle
+Icon: ri-error-warning-fill
 
 ----
 

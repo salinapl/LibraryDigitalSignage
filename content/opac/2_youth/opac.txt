@@ -44,8 +44,8 @@ Links:
 Ref:
 
 - 
-  link: https://boxicons.com/
-  description: boxicons Cheatsheet
+  link: https://remixicon.com/
+  description: remixicons Cheatsheet
 
 ----
 

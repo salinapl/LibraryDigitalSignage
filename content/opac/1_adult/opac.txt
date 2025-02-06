@@ -13,33 +13,33 @@ Headline: I want to...
 Links:
 
 - 
-  icon: bx bx-globe
+  icon: ri-pages-line
   link: 'https://www.salinapubliclibrary.org?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Explore the Website'
 - 
-  icon: bx bx-calendar
+  icon: ri-calendar-event-line
   link: 'https://www.salinapubliclibrary.org/events?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Discover Events'
 - 
-  icon: bx bx-book-reader
+  icon: ri-book-open-line
   link: 'https://salinapubliclibrary.org/research/databases-a-z?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Search the Databases'
 - 
-  icon: bx bx-game
+  icon: ri-gamepad-line
   link: 'https://salinapubliclibrary.org/programs-services/youth/learning-games?utm_source=opac&utm_medium=website&utm_campaign=adult'
   description: ' Play Learning Games'
 - 
-  icon: bx bx-devices
+  icon: ri-device-line
   link: >
     https://salinapubliclibrary.org/books-media/emedia/
   description: ' Explore eMaterials'
 - 
-  icon: bx bx-search
+  icon: ri-search-eye-line
   link: >
     https://discover.salinapubliclibrary.org/
   description: ' Search the Catalog'
 - 
-  icon: bx bx-user
+  icon: ri-id-card-line
   link: >
     https://discover.salinapubliclibrary.org/MyAccount/Home
   description: View My Account
@@ -49,8 +49,8 @@ Links:
 Ref:
 
 - 
-  link: https://boxicons.com/
-  description: boxicons cheatsheet
+  link: https://remixicon.com/
+  description: remixicons Cheatsheet
 
 ----
 

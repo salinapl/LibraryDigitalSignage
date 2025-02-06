@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-        <?= css('assets/css/boxicons.min.css') ?>
+        <?= css('assets/fonts/remixicon.css') ?>
         <?= css('assets/css/templates/error-slide.css') ?>
     </head>
     <body>
