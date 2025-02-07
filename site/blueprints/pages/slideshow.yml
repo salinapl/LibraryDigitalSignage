@@ -9,10 +9,6 @@ fields:
     label: Image Gallery
     type: pages
     query: site.find('galleries').children
-  video-gallery:
-    label: Video Gallery
-    type: pages
-    query: site.find('videogalleries').children
   tags:
     label: Campaign Categories
     type: multiselect

@@ -24,7 +24,7 @@ site/blueprints/users/default.yml
 # Placeholder files
 # ---------------
 
-content/videogalleries/1_video-gallery-a/*
+#content/videogalleries/1_video-gallery-a/*
 
 # Lock files
 # ---------------
