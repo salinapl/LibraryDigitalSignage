@@ -23,3 +23,7 @@ Selfcheck: true
 ----
 
 Template: image
+
+----
+
+Uuid: hwJs8LfxQHlJM8bn

@@ -10,7 +10,11 @@ Gallery: - page://7lG7ZNp0eh31DZ6N
 
 ----
 
-Tags: youth, event-web
+Video-gallery: - page://cPszgAjbazwfhdzl
+
+----
+
+Tags: event-web, video-test, youth
 
 ----
 

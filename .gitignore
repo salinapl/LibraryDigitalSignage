@@ -21,6 +21,11 @@ site/blueprints/users/default.yml
 /media/*
 !/media/index.html
 
+# Placeholder files
+# ---------------
+
+content/videogalleries/1_video-gallery-a/*
+
 # Lock files
 # ---------------
 

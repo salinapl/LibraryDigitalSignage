@@ -15,6 +15,15 @@ columns:
         image:
           cover: true
           query: page.previewImage
+      video-galleries:
+        type: pages
+        headline: Campaign Video Galleries
+        parent: kirby.page("videogalleries")
+        template:
+          - videogallery
+        info: "{{ page.videos.count }} video(s)"
+        layout: cardlets
+        empty: No galleries yet
       slideshows:
         layout: list
         type: pages

@@ -35,6 +35,31 @@
                 ->toDate('Y-m-d') <= date('Y-m-d');
     });
 
+    // Fetches the selected video gallery based on the campaign page
+    // then filters the gallery based on the selected tags.
+    $videos = page('videogalleries')
+                   ->children()
+                   ->videos()
+                   ->filterBy('tags', 'in', $page->tags()->split(','), ',');
+
+    // Filters videos further by orientation
+    $videos = $videos->filter(function ($video) use ($orientation) {
+        return $video->orientation() == $orientation;
+    });
+
+    // Filters the videos to only show ones that appear between
+    // the campaigns start and end date
+    $videos = $videos->filter(function ($video) {
+        return 
+            $video
+                ->expire()
+                ->toDate('Y-m-d') > date('Y-m-d')
+            &&
+            $video
+                ->start()
+                ->toDate('Y-m-d') <= date('Y-m-d');
+    });
+
     // Queries the web-slides page and gets an array of it's child pages,
     // it then filters the pages based on the selected tags. The error page
     // will never be selected as it does not have any set tags.
@@ -71,6 +96,13 @@
             $string .= $image->resize(1080, null)->url();
         }
         $string .= ')"></a>';
+        array_push($slides, $string);
+    }
+
+    foreach ($videos as $file){
+        $string = '<video autoplay muted loop> <source src="';
+        $string .= $file->url();
+        $string .= '"></video>';
         array_push($slides, $string);
     }
 

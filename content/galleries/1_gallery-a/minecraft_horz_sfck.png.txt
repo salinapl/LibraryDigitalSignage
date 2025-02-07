@@ -27,3 +27,7 @@ Text: Click to Register
 ----
 
 Template: image
+
+----
+
+Uuid: uQNo3AVgLnxVXwp9

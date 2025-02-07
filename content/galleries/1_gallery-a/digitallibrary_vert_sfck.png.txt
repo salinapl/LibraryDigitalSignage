@@ -27,3 +27,7 @@ Text: Click Here for Info
 ----
 
 Template: image
+
+----
+
+Uuid: DH4ugjVTz3DYvWzP
