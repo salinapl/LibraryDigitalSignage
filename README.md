@@ -9,11 +9,12 @@ A Simple and flexible digital signage and OPAC greeter built for public terminal
 
 
 
-- Auto Detection of Landscape or Portrait Display for default campaign
+- Auto Detection of Landscape or Portrait Display for default campaign (Image Slides Only)
 - Smart asset management: resizes uploaded images to proper size before loading
 - Manually Choose orientation via URL Path
 - Capability for multiple slideshow campaigns organized by a tagging system
 - Web-based live slides for tasks such as calendar events or event goals
+- Video slides
 - Capability for multiple source image galleries
 - Built-in Greeter page with easily customizable Link Buttons
 - Start and stop date system for pre-planning when Campaigns should start and end
@@ -43,9 +44,7 @@ To upgrade Kirby, simply download the newest version of the plainkit, Delete the
 LibSignTool is built on Kirby 3. Staying within the same generation of releases should be fine, but wait for offical word before upgrading to possible future KirbyCMS generations such as Kirby 4
 
 #### Kirby 4
-2024-09-28
-
-Currently testing Kirby 4, so far appears no issue with a direct upgrade of the current release on GitHub. Still planning on integrating some Kirby 4 features into web slides.
+Kirby 4 is now fully supported, Kirby 3 is not supported in versions v0.3.0 and newer
 
 ### LibSignTool
 
