@@ -66,11 +66,11 @@ Delay: 9000
 
 ----
 
-Gallery: galleries/primary-image-gallery
+Gallery: - page://7lG7ZNp0eh31DZ6N
 
 ----
 
-Tags: adult
+Tags: adult, youth
 
 ----
 
